@@ -1,8 +1,6 @@
-// Function to check Whether both passwords
-// are same or not.
-function checkPassword(form) {
-    let password1 = form.f_password.value;
-    let password2 = form.f_password_repeat.value;
+document.querySelector('.submit_button').oneclick =checkPassword(){
+    let password1 = document.querySelector('.f_password').value;
+    let password2 = document.querySelector('.f_password_repeat').value;
 
     // If password not entered
     if (password1 === '') {
@@ -25,6 +23,7 @@ function checkPassword(form) {
     // If same return True.
     else {
         document.getElementById("password_message_repeat").innerHTML = "";
-        alert("Password is correct");
+        return false;
     }
+
 }

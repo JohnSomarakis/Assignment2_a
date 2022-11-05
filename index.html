@@ -31,7 +31,7 @@
 
 
 <!-- Form  -->
-<form onsubmit="return ">
+<form id = "myForm">
 
     <label for="f_username">*Username:</label><br>
     <input type="text" id="f_username" name="f_username" required
@@ -396,7 +396,7 @@
     <input type="checkbox" id="f_accept_terms" name="f_accept_terms" required><br><br>
 
     <label>*</label>
-    <button class="submit_button" type="submit">Sign up CS359 Form</button>
+    <input type="button" onclick="checkPassword()" value="Submit">
 
 </form>
 
